@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Syne+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+   
+
+
+</head>
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" id="title-name">Dane Roberts</a>
+            <a href="#work">Work</a>
+            <a href="#bio_contact">Bio</a>
+            <a href="#bio_contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+
+</header>
+
+
+<main>
+
+      <div class="container" id="work">
+        <div class="box" >
+          <img src="./Img/illustration.jpg">
+          <span>ILLUSTRATIONS</span>
+        </div>
+        <div class="box">
+          <img src="./Img/tatoo.jpg">
+          <span>TATTOOS</span>
+        </div>
+        <div class="box">
+          <img src="./Img/canvas.JPG">
+          <span>LARGE SCALE CANVAS</span>
+        </div>
+      </div>
+
+
+
+</main>
+<footer>
+    <div id="bio_contact">
+    
+        <div class="large-text bio_contact-text">
+        <h2>BIO</h2>
+        <p>Dane is a London-based fine artist, illustrator, and tattoo designer. His work is contemporary and inspired by psychedelics and gaming culture. Dane showed his work across international art fairs and now works in his workshop and gallery on Bond Street.
+            
+        </p>
+    
+    </div>
+
+    <div class="bio_contact-text">
+        <h2>CONTACT</h2>
+        
+        <div class="container2">
+          <form id="contactDane" name="contactDane" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <div class="row">
+              <div class="col-25">
+                <label for="name">Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="name" name="name" placeholder="Your name.." required>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="email">Email</label>
+              </div>
+              <div class="col-75">
+                <input type="email" id="email" name="email" placeholder="Your email..">
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Subject</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write a brief description of your comission." style="height:200px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div> 
+    </div>
+</footer>
+<script src="javascript.js"></script>
+</body>
+</html>
